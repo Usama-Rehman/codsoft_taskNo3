@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate Me!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <h1 class="center">Welcome To Calculate Me!</h1>
+        <div class="container">
+            <div class="main">
+                <form action="" class="calculatorform" name="calculatorform">
+                    <div class="screen">
+                        <input type="text" class="display" name="screen" placeholder="0" readonly>
+                    </div>
+                    <div class="btn">
+                        <table>
+                            <tr>
+                                <td><input type="button" class="button" name="num7" value="7"
+                                        onclick="valuebutton(this);"></td>
+                                <td><input type="button" class="button" name="num8" value="8"
+                                        onclick="valuebutton(this);"></td>
+                                <td><input type="button" class="button" name="num9" value="9"
+                                        onclick="valuebutton(this);"></td>
+                                <td><input type="button" class="button mathbutton" name="plus" value="+"
+                                        onclick="valuebutton(this);"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="button" class="button" name="num4" value="4"
+                                        onclick="valuebutton(this);"></td>
+                                <td><input type="button" class="button" name="num5" value="5"
+                                        onclick="valuebutton(this);"></td>
+                                <td><input type="button" class="button" name="num6" value="6"
+                                        onclick="valuebutton(this);"></td>
+                                <td><input type="button" class="button mathbutton" name="subtract" value="-"
+                                        onclick="valuebutton(this);"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="button" class="button" name="num1" value="1"
+                                        onclick="valuebutton(this);"></td>
+                                <td><input type="button" class="button" name="num2" value="2"
+                                        onclick="valuebutton(this);"></td>
+                                <td><input type="button" class="button" name="num3" value="3"
+                                        onclick="valuebutton(this);"></td>
+                                <td><input type="button" class="button mathbutton" name="multiply" value="*"
+                                        onclick="valuebutton(this);"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="button" class="button clearbtn" name="C" value="C"
+                                        onclick="Clear()"> </td>
+                                <td><input type="button" class="button" name="num0" value="0"
+                                        onclick="valuebutton(this);"></td>
+                                <td><input type="button" class="button mathbutton" name="equal" value="="
+                                        onclick="Calculate()"></td>
+                                <td><input type="button" class="button mathbutton" name="divide" value="/"
+                                        onclick="valuebutton(this);"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
